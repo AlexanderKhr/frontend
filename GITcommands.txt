@@ -5,9 +5,9 @@ all commands will be started from "git"
 git config --list 						// list of settings/configurations
 git config --help 						// list of commands
 git init							// Reinitialized existing Git repository in C:/Users/Alexander/Desktop/test/.git/
-git remote add origin https://github.com/AlexanderKhr/BasicProgramming  //
-git clone https://github.com/AlexanderKhr/frontend		//
-git clone https://github.com/AlexanderKhr/frontend myfolder 	//copy in new folder 'myfolder'
+git remote add origin https://github.com/<name of user>/<folder name>  //
+git clone https://github.com/<name of user>/<folder name>		//
+git clone https://github.com/<name of user>/<folder name> 	//copy in new folder 'myfolder'
 git log								// 
 git status							// git status
 git diff							// show difference
@@ -28,11 +28,19 @@ git remote show <name>						// showing &???
 git remote update <name>					// connecting branch/stick
 git fetch <name>						// before git pull 
 git merge <your> <pull>						// name of branch 
+git merge login							// fusion of branches
+git merge master/login						// fusion of branches from/to
+git branch							// show name of branch
+git branch <branch name>					// creating of new branch
+git branch -v <branch name>					// showing commit
+git checkout -b <branch name>					// creating a new branch and redirect to in branch
+git branch -d <branch name>					// deleting of brench
+git checkout <branche name>					// redirect from my branch to other branch
 
 
 
 
-
+cls			// clean console
 cd .. 			// back
 cd ./Decktop 		// go to desktop
 mkdir <name> 		// Make directory (Create folder)

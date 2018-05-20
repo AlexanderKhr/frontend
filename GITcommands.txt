@@ -21,9 +21,9 @@ git pull origin master						// downloading ex git hub (writing name of branch)
 git commit  -amend						// canceled all added before 
 git mv <file from> <file to>					// name of file without '<>'
 git fm -f <file name>						// deleting file from commit and from GitHub
-git rm -cached <file name>					// nbacking deleted file ftom commit
+git rm -cached <file name>					// backing deleted file ftom commit
 git remote -v							// showing way to repository
-git remote rename <old name> <new name>				// cahnger name but only local
+git remote rename <old name> <new name>				// cahager name but only local
 git remote show <name>						// showing &???
 git remote update <name>					// connecting branch/stick
 git fetch <name>						// before git pull 

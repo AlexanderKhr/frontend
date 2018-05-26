@@ -1,0 +1,57 @@
+html, body{
+    height: 100%;
+}
+
+body{margin:0;
+    font-size:20px; /*standard browser size 14px*/
+   /* font-size: 2em;*/ /*1em=10px*/
+    /*font-size: 1vw;*/ /*1vw=viewport width*/
+    /*font-size: 3vh;*/ /*1vh=viewport height*/
+}
+
+header {
+    text-align: center;
+    font-size: 0.8em;
+    height: 10em;
+    background: olive;
+}
+
+aside{
+    width: 30%;
+    display: inline-block;
+    float:left;
+    /*position: fixed;*/
+
+}
+content{
+    width: 70%;
+    display: inline-block;
+    float: left;
+}
+
+
+
+footer {
+    clear:both; /* cancelling float:left */
+    height: 50px;
+    background: olive;
+}
+
+button.small {
+    font-size: 1em;
+    min-width: 6em;
+    height: 2em;
+}
+
+@media all and (max-width: 500px){
+    body{
+        font-size:8px;
+    }
+    button.small{
+        font-size:2em;
+    }
+}
+
+table {
+    float: center;
+}

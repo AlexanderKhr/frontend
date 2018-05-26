@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+
+/* by TEG */
+div{
+    background: red;
+    height: 15px;
+    /*display: inline-block;*/
+}
+
+/* by CLASS */
+.div1{
+    background: blue;
+    height: 15px;
+}
+
+/* by ID */
+#div2{
+    background: grey;
+    height: 15px;
+}
+/* by attribute from command "data-somthing" */
+[data-div3]{
+    background: green;
+    height: 15px;
+}

@@ -1,0 +1,86 @@
+html, body{
+    margin:0;
+}
+
+.red{
+     background: red;
+ }
+
+.orange{
+    background: orange;
+}
+
+.yellow{
+    background: yellow;
+}
+
+.green{
+    background: green;
+}
+
+.blue{
+    background: blue;
+}
+
+.container>div>div {
+    height: 50px;
+}
+
+.container>div{
+    display:flex;
+    border: 2px solid;
+    margin-bottom: 20px;
+}
+
+div[class^='div']>div{
+    flex:1;
+}
+
+.div2{
+    flex-direction: column;
+    height: 250px;
+}
+
+.div2>div{
+    height: auto;
+}
+
+.div2>div:first-child{
+    flex:3;
+}
+
+.div2>div:last-child{
+    flex: 6;
+}
+
+.div3{
+    flex-direction: row;
+    height: unset; /* cancelling heigth */
+}
+
+.div4>div{
+    flex:1;
+}
+
+@media all and (max-width: 500px){
+    .div4{
+        flex-direction:column;
+    }
+}
+
+
+.div5{
+    /*flex-wrap:wrap*/ /* accepting of removing blocks */
+}
+
+.div5>div{
+    width: 33.3%;
+    flex: unset !important;
+}
+
+
+.div6>div:last-child{
+    flex:2;
+    flex-grow:1; /* using space not more that 1 part */
+    /* flex-shrink:1;*/ /*using space not less that 1 part */
+}

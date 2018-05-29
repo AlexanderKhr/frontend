@@ -1,0 +1,32 @@
+bode{
+    margin:0;
+}
+
+.px{
+    font-size:10px;
+}
+
+.em{
+    font-size:1.4em;
+}
+
+.rem{
+    font-size:0.8rem;
+}
+
+/* from parrent font size */
+.percent{
+    font-size:100%;
+}
+
+.vw{
+    font-size:2vw;
+}
+
+.vh{
+    font-size:2vh;
+}
+
+li{
+    font-size:0.8em;
+}

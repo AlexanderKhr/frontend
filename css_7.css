@@ -1,0 +1,16 @@
+div{
+    border:8px solid red;
+    padding:0px;
+    /*padding:5px 5px 5px 5px;*/ /* top, right, bottom, left */
+    /*padding:5px 10px;*/ /* down/top and left/right */
+    /*padding:5px 10px 15px; /* top, left/right, bottom */
+    /*padding:5px;*/ /*All*/
+    /*padding:20%;*/ /* 20% from width of div */
+    margin: 20%; /* 20% from width of div */ /*working like padding */
+}
+
+span{
+    font-size: 20px;
+    font-weight: bolder;
+    color:red;
+}

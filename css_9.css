@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+}
+
+.gradient{
+    height: 50px;
+    border:1px solid black;
+    background:-webkit-linear-gradient(45deg, rgba(153,218,255,1) 0%, rgba(0,128,128,1) 100%);
+    /*background:-webkit-linear-gradient(-180deg, rgba(0,128,128,1) 0%, rgba(153,218,255,1) 100%);*/
+}
+
+.box-shadow{
+    margin-top:50px;
+    height: 50px;
+    border:1px solid red;
+    box-shadow: 0px 0px 0px 0px #000; /*axis x, axis y, radius, width, color*/
+    box-shadow: inset 0 0 5px 5px #000;/*inset-inner shadow*/
+    box-shadow: inset 0 0 5px 5px #000, inset 0 0 5px 5px red; /* combining shadow */
+    box-shadow: 0 0 5px 5px #000, 0 0 5px 5px red;/* combining shadow */
+}
+
+/* 2d and 3d transforming
+rotateX - 2D, rotateY/rotateZ - 3D*/
+
+.transform{
+    margin: 0 auto; /* centered */
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: scale(2);
+    transform: translate(100px, 100px);
+    transform: translateX(100px);
+    transform: skewX(45deg);
+    transform: skewY(45deg);
+    transform: matrix(0.6,1,1,0.3,0,0) rotateY(-239deg);
+
+    /* matrix(0.6,1,1,0.3,0,0)
+        (skewX,scaleY,ScaleX,skewY,translateX,translateY
+     */
+    /* transform origin*/
+
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform: rotate(45deg);
+    /* end transform*/
+
+    transition:all .5s linear;
+    padding-top: 100px;
+    height: 50px;
+    width: 100px;
+    background: red;
+}
+
+/* animation */
+button {
+
+}

@@ -55,5 +55,35 @@ rotateX - 2D, rotateY/rotateZ - 3D*/
 
 /* animation */
 button {
+    transition: background .5s linear;
+    background: white;
+}
 
+button:hover {
+    background: dodgerblue;
+}
+
+
+@keyframes  colors {
+    0% {
+        background: darkred;
+    }
+    10% {
+        background: red;
+    }
+    15% {
+        background: orangered;
+    }
+    20% {
+        background: darkorange;
+    }
+
+}
+
+.keyFrames2{
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    animation: colors 8s linear infinite;
+    margin-top: 100px;
 }

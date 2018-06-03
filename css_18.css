@@ -1,0 +1,24 @@
+bode {
+    margin: 0;
+}
+header {
+    text-align: center;
+}
+
+img, h1, aside, content {
+    display: inline-block;
+
+}
+
+li {
+    color:red;
+}
+
+iframe {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}

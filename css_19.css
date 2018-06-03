@@ -1,0 +1,53 @@
+body {
+    margin:0;
+    height: 100%;
+}
+
+header {
+    height: 20%;
+    background-color: black;
+    opacity: .5;
+    text-align: right;
+    padding: .8%;
+    margin: .8%;
+}
+
+.content {
+    background-color: black;
+    opacity: .5;
+    margin: 2em;
+    padding: 2em;
+}
+
+p {
+    color: white;
+    display: inline-block;
+}
+
+
+header button, footer button {
+    background-color: purple;
+    height: 3em;
+    opacity: 1;
+}
+
+.content button {
+    display: inline-block;
+    background-color: purple;
+    height: 2em;
+}
+
+footer {
+    height: 20%;
+    background-color: black;
+    opacity: .5;
+    text-align: left;
+    padding: .8%;
+    margin: .8%;
+}
+
+#dd {
+    height: 5em;
+    display: inline-block;
+
+}

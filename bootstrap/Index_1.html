@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css_1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- connectiong scripts of bootstrap -->
+    <script defer src="./js/jquery/jquery_3_3_1.js"></script>
+    <script defer src="js/bootstrap/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<h1>Headline</h1>
+
+<div class="container-fluid">
+    <div class="row cnt1">
+        <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4"
+             style="background-color: lightblue;"></div>
+        <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4"
+             style="background-color: blue;"></div>
+        <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4"
+             style="background-color: darkblue;"></div>
+    </div>
+
+    <br>
+
+    <div class="row cnt1">
+        <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4"
+             style="background-color: lightgreen;"></div>
+        <div class="col-xs-6 col-xs-offset-6 col-sm-offset-0 col-sm-2 col-md-3 col-lg-4"
+             style="background-color: green;"></div>
+        <div class="col-xs-6 col-sm-2 col-md-3 col-lg-4"
+             style="background-color: darkgreen;"></div>
+    </div>
+
+    <br>
+
+    <div class="row cnt1">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-4" style="background-color: pink"></div>
+                <div class="col-xs-4" style="background-color: brown"></div>
+                <div class="col-xs-4" style="background-color: darkred"></div>
+            </div>
+        </div>
+
+        <div class="col-xs-12" style="background-color: grey"></div>
+        <div class="col-xs-12" style="background-color: black"></div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-md-9 col-md-push-3" style="background-color: yellow"> <----</div>
+        <div class="col-md-3 col-md-pull-9" style="background-color: lightblue"> ----></div>
+    </div>
+
+
+    <br>
+
+    <div class="table-responsive">
+        <table class="table table-hover" style="background-color: lightgreen">
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <tr>
+                <td>1.1</td>
+                <td>1.2</td>
+                <td>1.3</td>
+            </tr>
+            <tr>
+                <td>2.1</td>
+                <td>2.2</td>
+                <td>2.3</td>
+            </tr>
+            <tr>
+                <td>3.1</td>
+                <td>3.2</td>
+                <td>3.3</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <br>
+
+    <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-sort-by-attributes" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-sd-video" aria-hidden="true"></span>
+
+    <br>
+
+    <button type="button" class="btn btn-default" aria-label="Left Align">
+        <span class="glyphicon glyphicon-phone" aria-hidden="true"> HELLO</span>
+    </button>
+    <button type="button" class="btn btn-default btn-lg" aria-label="Left Align">
+        <span class="glyphicon glyphicon-link" aria-hidden="true">   Link ...</span>
+    </button>
+    <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+        <span class="glyphicon glyphicon-sd-video" aria-hidden="true"> Video </span>
+    </button>
+
+    <br><br>
+
+    <div class="alert alert-danger" role="alert">
+        <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+        <span class="sr-only">Link:</span>
+        Hi how are you?
+    </div>
+
+    <br>
+
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true">
+            Dropdown<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Somthing else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separeted link</a></li>
+        </ul>
+    </div>
+
+    <br>
+
+    <div class="dropdown megaclass">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true">
+            Dropdown<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Somthing else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separeted link</a></li>
+        </ul>
+    </div>
+    <br>
+
+    <!-- Modal -->
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">x</span>
+                    </button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Some text...
+                    </p>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">
+                        Close
+                    </button>
+                    <button class="btn btn-primary" type="button">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+            data-target="#myModal">
+        Launch demo modal
+    </button>
+
+    <div id="myModal" class="modal">
+
+    </div>
+
+
+</div>
+<br>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    margin:0;
+}
+
+div {
+    margin: 1em;
+    background-color: black;
+    height: 3%;
+}
+
+div.two {
+    width: 40%;
+}
+
+button {
+    display: inline-block;
+    margin: 1em;
+    color: white;
+    padding: 5px;
+    background-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+}
+
+button
+

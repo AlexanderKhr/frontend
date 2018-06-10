@@ -12,7 +12,7 @@ header {
     margin: .8%;
 }
 
-.content {
+.selection {
     background-color: black;
     opacity: .5;
     margin: 2em;
@@ -25,7 +25,7 @@ p {
 }
 
 
-header button, footer button {
+header button, .footer button {
     background-color: purple;
     height: 3em;
     opacity: 1;
@@ -35,9 +35,15 @@ header button, footer button {
     display: inline-block;
     background-color: purple;
     height: 2em;
+    padding: 5px;
 }
 
-footer {
+.content > button {
+    background-color: darkred;
+    color: white;
+}
+
+.footer {
     height: 20%;
     background-color: black;
     opacity: .5;
@@ -46,8 +52,21 @@ footer {
     margin: .8%;
 }
 
-#dd {
-    height: 5em;
-    display: inline-block;
+.content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkred;
+    margin: 20px;
+    padding: 15px;
+    background-color: black;
+    opasity:.8;
+}
+
+.selection {
+margin: 10px;
+    color:white;
+}
+
+.moreButton {
 
 }

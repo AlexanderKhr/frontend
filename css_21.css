@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+div {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    color:darkmagenta;
+}
+
+.content {
+    display: flex;
+}
+
+.one {
+    width: 25%;
+    background-color: silver;
+    flex: 1;
+    padding: 1em;
+    min-height: 7em;
+}
+
+.two {
+    width: 25%;
+    background-color: lightgrey;
+    flex: 1;
+    padding: 1em;
+    min-height: 7em;
+}
+
+/*
+    #id .class .class2 div
+
+    #id - priority 100
+    .class - priority 10
+    .class2 - priority 10
+    div 1  - priority 1
+ */
+

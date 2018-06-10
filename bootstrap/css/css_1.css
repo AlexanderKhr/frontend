@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+.cnt1 div{
+    height: 50px;
+}
+
+.megaclass {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+

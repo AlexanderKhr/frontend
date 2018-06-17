@@ -453,7 +453,664 @@
     <textarea class="form-control" rows="3"></textarea><br>
 
 
+    <!-- flags and radio-->
+    <div class="checkbox">
+        <label type="checkbox" value="">
+            <input type="text">
+            If neet to take few answers
+        </label>
+    </div>
 
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            First option - take, if you like this product
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            Second option - this is else, and this option are make unread first
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+            Second option - this is else, and this option are make unread first
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+            Second option - this is else, and this option are make unread first
+        </label>
+    </div>
+
+    <!-- checkbox in line-->
+    <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox1" value="option1">1
+    </label>
+    <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox2" value="option2">2
+    </label>
+    <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox3" value="option3">3
+    </label>
+
+    <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+    </select>
+
+    <select multiple class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+    </select>
+
+    <!-- static control. When you need to put some text nearly with form label in horizontal are of form,
+    use .form-control-static  class for <p> -->
+
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <p class="form-control-static">email@example.com</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+    </form>
+
+    <input type="text" class="form-control" placeholder="Enter text..."><br>
+
+    <input type="text" class="form-control" id="disabledInput" placeholder="Disabled input here..." disabled>
+
+    <-- turn off -->
+    <form role="form">
+        <fieldset disabled>
+            <div class="form-group">
+                <label for="disabledTextInput">Not activated input</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="Disapled input">
+            </div>
+            <div class="form-group">
+                <label for="disabledSelect">Not activated select menu</label>
+                <select id="disabledSelect" class="form-control">
+                    <option value="">Disable select</option>
+                </select>
+            </div>
+            <div class="checkbox">
+                <label for="">
+                    <input type="checkbox">Can't check it
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </fieldset>
+    </form>
+
+
+    <!-- checking of -->
+    <div class="form-group has-success">
+        <label class="control-label" for="inputSuccess1">Good input</label>
+        <input type="text" class="form-control" id="inputSuccess1">
+    </div>
+    <div class="form-group form-warning">
+        <label class="control-label" for="inputWarning1">Enter with warning</label>
+        <input type="text" class="form-control" id="inputWarning1">
+    </div>
+    <div class="form-group has-error">
+        <labe class="control-label" for="inputError1">Enter with some mistake</labe>
+        <input type="text" class="form-control" id="inputError1"
+    </div>
+
+    <!-- with additional ico-->
+    <div class="form-group has-success has-feedback">
+        <label class="control-label" for="inputSuccess2">Good input</label>
+        <input type="text" class="form-control" id="inputSuccess2">
+        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+    </div>
+    <div class="form-group has-warning has-feedback">
+        <label class="control-label" for="inputWarning2">Warning input</label>
+        <input type="text" class="form-control" id="inputWarning2">
+        <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+    </div>
+    <div class="form-group has-error has-feedback">
+        <label class="control-label" for="inputError2">Error input</label>
+        <input type="text" class="form-control" id="inputError2">
+        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+    </div>
+    <br>
+    <span class="glyphicon glyphicon-search"></span><br>
+
+    <input type="text" class="form-control input-lg" placeholder=".input-lg">
+    <select name="" id="" class="form-control input-lg">
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+    </select><br>
+
+    <input type="text" class="form-control" placeholder="Default input">
+    <select name="" id="" class="form-control">
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+    </select><br>
+
+    <input type="text" class="form-control input-sm" placeholder="Small input .input-sm">
+    <select name="" id="" class="form-control input-sm">
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+    </select><br>
+
+    <form action="" role="form">
+        <input type="text" class="form-control">
+        <span class="help-block">Text</span>
+    </form>
+
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-link">Link</button>
+    <br>
+
+    <br>
+    <button type="button" class="btn btn-default btn-lg">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-success btn-sm">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning btn-xs">Warning</button>
+    <button type="button" class="btn btn-link btn-xs">XS Button</button>
+    <br><br>
+
+    <!-- block with 100% width -->
+    <button type="button" class="btn btn-primary btn-block btn-lg">Block button</button>
+    <button type="button" class="btn btn-default btn-block btn-lg">Block button</button>
+    <button type="button" class="btn btn-danger btn-block btn-lg">Block button</button>
+    <br>
+
+    <!-- -->
+    <button type="button" class="btn btn-primary btn-lg active">Main button</button>
+    <button type="button" class="btn btn-default btn-lg active">Button</button>
+    <a href="#" class="btn btn-primary btn-lg active" role="button">Main link</a>
+    <a href="#" class="btn btn-default btn-lg active" role="button">Link</a>
+    <br><br>
+
+
+    <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Main button</button>
+    <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+    <a href="#" class="btn btn-primary btn-lg disabled" role="button">Main link</a>
+    <a href="#" class="btn btn-default btn-lg disabled " role="button">Link</a>
+    <br><br>
+
+    <!-- recommended to using <button> element for rendering of cross browser-->
+    <a class="btn btn-default" href="#" role="button">Link</a>
+    <button class="btn btn-default" type="submit">Button</button>
+    <input class="btn btn-default" type="button" value="Input">
+    <input class="btn btn-default" type="submit" value="Submit">
+    <br><br>
+
+    <!-- Images images in bootstrap with class .img-responsive max-width:100% and height:auto-->
+    <!--adaptive images-->
+    <img src="img/1.jpg" class="img-responsive" alt="Responsive image">
+
+    <!-- figure of image -->
+    <img src="img/1.jpg" alt="" class="img-rounded">
+    <img src="img/1.jpg" alt="" class="img-circle">
+    <img src="img/1.jpg" alt="" class="img-thumbnail">
+    <br>
+
+
+    <!-- Text color -->
+    <p class="text-muted">Text muted</p>
+    <p class="text-primary">Text primary</p>
+    <p class="text-success">Text success</p>
+    <p class="text-info">Text info</p>
+    <p class="text-warning">Text warning</p>
+    <p class="text-danger">Text danger</p>
+    <hr>
+
+    <!-- background color of text-->
+    <p class="bg-primary">BG primary</p>
+    <p class="bg-success">BG success</p>
+    <p class="bg-info">BG info</p>
+    <p class="bg-warning">BG warning</p>
+    <p class="bg-danger">BG danger</p>
+
+    <!-- sings of close -->
+    <button type="button" class="close" aria-hidden="true" >x</button>
+    <br>
+
+    <!--Icon of menu-->
+    <Span class="caret"></Span>
+    <hr>
+
+    <!-- fast alignment -->
+    <div class="pull-left">
+        <button type="button" class="close" aria-hidden="true">x</button>
+    </div>
+    <br>
+    <div class="pull-right">
+        <button type="button" class="close" aria-hidden="true">x</button>
+    </div>
+    <br>
+
+    <!-- centering of block-->
+    <div class="center-block">
+        ... Not working
+    </div>
+
+    <!-- canceling float in any element with class .clearfix -->
+    <div class="clearfix">
+        ...
+    </div>
+
+    <div class="show">
+        <p>Show</p>
+    </div>
+    <div class="hidden">
+        <p>Hidden</p>
+    </div>
+
+
+    <!-- Reading of context from display. -->
+    <a href="content" class="sr-only">Skip to main content</a>
+
+    <!-- Components of Bootstrap -->
+    <!-- buttons wit ico -->
+    <button type="button" class="btn btn-default" aria-label="Left Align">
+        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+    </button>
+    <button type="button" class="btn btn-default btn-lg" aria-label="Left Align">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+    </button>
+    <br><br>
+
+    <div class="alert alert-danger" role="alert">
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        <span class="sr-only">Error:</span>
+        Enter a valid e-mail address
+    </div>
+    <br>
+
+    <div class="container-fluid center">
+    <div class="dropdown btn-right">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true">
+            Dropdown<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Somthing else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separeted link</a></li>
+        </ul>
+    </div>
+    </div>
+
+
+    <br><br>
+    <hr>
+
+    <div class="container-fluid myClass">
+        <div class="dropdown btn-right">
+            <button class="btn btn-default dropdown-toggle" type="button"
+                    id="dropdownMenu1" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="true">
+                Dropdown
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu"
+                aria-labelledby="dropdownMenu2">
+                <li role="presentation" class="dropdown-header">
+                    Название меню</li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation" class="dropdown-header">
+                    Название меню</li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-toolbar" role="toolbar">
+        <div class="btn-group btn-group-lg">
+            <button type="button" class="btn btn-default">1</button>
+            <button type="button" class="btn btn-default">2</button>
+            <button type="button" class="btn btn-default">3</button>
+        </div>
+    </div>
+    <div class="btn-group btn-group-xs">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default">1</button>
+    </div>
+
+    <br><br>
+    <hr>
+    <div class="btn-group btn-group-lg">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+        <button type="button" class="btn btn-default">3</button>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+        <button type="button" class="btn btn-default">3</button>
+    </div>
+    <div class="btn-group btn-group-sm">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+        <button type="button" class="btn btn-default">3</button>
+    </div>
+    <div class="btn-group btn-group-xs">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+        <button type="button" class="btn btn-default">3</button>
+    </div>
+    <br><br>
+    <hr>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Dropdown 1</a></li>
+            <li><a href="#">Dropdown 2</a></li>
+        </ul>
+    </div></div>
+
+    <br><br>
+
+    .btn-group-vertical>button[type=button].btn.btn-default{$}*6
+
+    <br><br>
+
+    <div class="btn-group-vertical">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+        <button type="button" class="btn btn-default">3</button>
+        <button type="button" class="btn btn-default">4</button>
+        <button type="button" class="btn btn-default">5</button>
+        <button type="button" class="btn btn-default">6</button>
+    </div>
+    <br><br>
+    <hr>
+
+    <!-- groups of buttons justify-->
+    <div class="btn-group btn-group-justified">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">Left</button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">Center</button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">Right</button>
+        </div>
+    </div>
+    <br><br>
+    <hr>
+
+
+    <!-- Changing of view of Button dropdown. change special class "btn btn-default" -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success
+        <span class="caret"></span>
+        </button>
+            <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Deistvie</a></li>
+            <li><a href="#">Second</a></li>
+            <li><a href="#">Thomthing</a></li>
+            <li></li>
+            <li><a href="#">Other link</a></li>
+        </ul>
+    </div>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary
+        <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Deistvie</a></li>
+            <li><a href="#">Second</a></li>
+            <li><a href="#">Thomthing</a></li>
+            <li></li>
+            <li><a href="#">Other link</a></li>
+        </ul>
+    </div>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+            <span   class="caret"></span>
+            <span   class="sr-only">Menu with swithing</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Deistvie</a></li>
+            <li><a href="#">Second</a></li>
+            <li><a href="#">Thomthing</a></li>
+            <li></li>
+            <li><a href="#">Other link</a></li>
+        </ul>
+    </div>
+    <br><br>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">Big button
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Deistvie</a></li>
+            <li><a href="#">Second</a></li>
+            <li><a href="#">Thomthing</a></li>
+            <li><a href="#">Other link</a></li>
+        </ul>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">Big button
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Deistvie</a></li>
+            <li><a href="#">Second</a></li>
+            <li><a href="#">Thomthing</a></li>
+            <li><a href="#">Other link</a></li>
+        </ul>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Big button
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Deistvie</a></li>
+            <li><a href="#">Second</a></li>
+            <li><a href="#">Thomthing</a></li>
+            <li><a href="#">Other link</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <hr>
+
+    <div class="btn-group dropup">
+        <button type="button" class="btn btn-default">Up list</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only">Menu with switches</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Deistvie</a></li>
+            <li><a href="#">Second</a></li>
+            <li><a href="#">Thomthing</a></li>
+            <li><a href="#">Other link</a></li>
+        </ul>
+    </div>
+    <br><br>
+    <hr>
+
+    <div class="input-group">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder="Username">
+    </div>
+    <br>
+
+    <div class="input-group">
+        <input type="text" class="form-control">
+        <span class="input-group-addon">.00</span>
+    </div>
+    <br>
+
+    <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control">
+        <span class="input-group-addon">.00</span>
+    </div>
+    <br>
+
+    <!-- changes of size of forms-->
+    <div class="input-group input-group-lg">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder=".input-group-lg">
+    </div>
+    <br>
+
+    <div class="input-group">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder="Default size">
+    </div>
+    <br>
+
+    <div class="input-group input-group-sm">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder=".input-group-sm">
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <input type="checkbox">
+                </span>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <input type="radio">
+                </span>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go</button>
+                </span>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go</button>
+            </span>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- button with dropdown menu
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action
+                        <span class="caret"></span>
+                        </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Deistvie</a></li>
+                        <li><a href="#">Second</a></li>
+                        <li><a href="#">Thomthing</a></li>
+                        <li><a href="#">Other link</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="col-lg-6">
+        <div class="input-group">
+            <input type="text" class="form-control">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                    <li><a href="#">Deistvie</a></li>
+                    <li><a href="#">Second</a></li>
+                    <li><a href="#">Thomthing</a></li>
+                    <li><a href="#">Other link</a></li>
+                </ul>
+            </div>
+        </div>
+
+    <br>
+-->
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-danger dwopdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                    <span class="sr-only">Menu with switch</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Deistvie</a></li>
+                    <li><a href="#">Second</a></li>
+                    <li><a href="#">Thomthing</a></li>
+                    <li><a href="#">Other link</a></li>
+                </ul>
+            </div>
+                <input type="text" class="form-control">
+            </div>
+
+            <br><br>
+            <hr>
 
 
 

@@ -1,0 +1,145 @@
+@import url("./variables.less");
+
+/* grouping of selectors */
+
+body {
+    .main{
+      height: 50px;
+    }
+    .header{
+      height: 50px;
+    }
+    .footer{
+      height: 50px;
+    }
+}
+
+/* & means parental celestial (in this case - html body) */
+
+html body { /* = html body .main */
+  & .main {
+    height: 20px;
+    @backColor:red;
+    /*@backColor:#aabbcc;*//*change name of variables*/
+    background-color: @backColor;
+  }
+}
+
+.main.mainest{
+  height: 50px;
+}
+
+/* = .main.maintest */
+
+.main {
+    .div{
+      height: 20px;
+    }
+  &.mainest{ /* & = .main */
+    background-color: dodgerblue;
+  }
+}
+
+/* make gradient to button */
+
+.button {
+  width: 120px;
+  height: 70px;
+  background: -webkit-gradient(linear,left top,left bottom, from(@color+#151515),to(@color - #ffff00));
+  background: -moz-linear-gradient(top,@color+#151515,@color - #ffff00);
+}
+
+a{
+  color:#777;
+  text-decoration: none;
+  &:hover{ /* =a:hover */
+    color:#a31515;
+  }
+}
+
+/* addition of styles */
+
+.btn {/* 1st button */
+  color:white;
+  background-color: #777777;
+  &-add{
+    color:white;
+    background-color: darkgrey;
+  }
+  &-remove{
+    color:white;
+    background-color: #a31515;
+  }
+  /* can combined styles */
+  /*  &-add, &-remote {
+      colorr:#fff;
+      }
+   */
+}
+
+
+/*multiple and combined use*/
+
+ul, li {
+  border-top:2px dotted #366;
+  &+&{
+    border-top: 0;
+  }
+}
+
+/*  */
+
+.class-1{
+  background-color: black;
+  border-radius: 15px;
+  border: 2px double black;
+  color:#000;
+}
+
+.class-2:extend(.class-1){
+  background-color: yellow;
+  border-radius: 0;
+}
+
+.class-3 {
+    &:extend(.class-1);
+  background-color: orange;
+  border: 1px solid red;
+}
+
+.div-1 {
+  background-color: yellow;
+  color: #000;
+}
+
+.div-2 {
+  &:extend(.div-1);
+  background-color: blue;
+  border: 1px solid black;
+}
+
+.one{
+  background-color: #336666;
+  .two{
+    width: 50px;
+    color:#a31515;
+    border: 1px dashed black;
+  }
+}
+
+.onetwo {
+  &:extend(.one .two);
+}
+
+/* impurities with parameters */
+
+.mixin-button(@_color-mixin, @border-width){
+  background: @color-btn;
+  border: @border-width solid @_color-mixin;
+}
+
+.mixin-extended-button {
+  .mixin-button(purple,1px);
+  color:white;
+}
+

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home work</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/hometask.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- connectiong scripts of bootstrap -->
+    <script defer src="./js/jquery/jquery_3_3_1.js"></script>
+    <script defer src="js/bootstrap/bootstrap.js"></script>
+    <!-- connectiong scripts of jquery -->
+    <script defer src="js/bootstrap/bootstrap-alert.js"></script>
+    <script defer src="js/bootstrap/bootstrap-button.js"></script>
+    <script defer src="js/bootstrap/bootstrap-carousel.js"></script>
+    <script defer src="js/bootstrap/bootstrap-dropdown.js"></script>
+    <script defer src="js/bootstrap/bootstrap-modal.js"></script>
+    <script defer src="js/bootstrap/bootstrap-popover.js"></script>
+    <script defer src="js/bootstrap/bootstrap-scrollspy.js"></script>
+    <script defer src="js/bootstrap/bootstrap-collapse.js"></script>
+    <script defer src="js/bootstrap/bootstrap-tab.js"></script>
+    <script defer src="js/bootstrap/bootstrap-tooltip.js"></script>
+    <script defer src="js/bootstrap/bootstrap-typeahead.js"></script>
+</head>
+
+<body>
+
+<!-- 1. fixed menu upstears
+     2. content devided by to col-6
+     3. left 3 content rigth links col-2
+     4. pager
+     5. button on center after context
+     6. fotter -->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6" >
+            <h1 class="header1">The Biggest cities in Ukraine</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide col-md-offset-3 col-md-6" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="img/kiev.jpg" alt="Kiev">
+        </div>
+
+        <div class="item">
+            <img src="img/odessa.jpg" alt="Odessa">
+        </div>
+
+        <div class="item">
+            <img src="img/nikolaev.jpg" alt="Nikolaev">
+        </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+<br>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-2 ncity" >
+            <span >Name of the city</span>
+        </div>
+        <div class="col-md-1 popul1">
+            <span>Population</span>
+        </div>
+        <div class="col-md-offset-1 col-md-2 link1">
+            <span>Wiki link ...</span>
+        </div>
+    </div>
+</div>
+
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-2 ncity" >
+            <span>Kiev</span>
+        </div>
+        <div class="col-md-1 popul1" >
+            2,847,200
+        </div>
+        <div class="col-md-offset-1 col-md-2 link1" >
+            <a href="https://en.wikipedia.org/wiki/Kiev">See more ...</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-2 ncity" >
+            <span>Kharkiv</span>
+        </div>
+        <div class="col-md-1 popul1">
+            <span>1,470,902</span>
+        </div>
+        <div class="col-md-offset-1 col-md-2 link1" >
+            <a href="https://en.wikipedia.org/wiki/Kharkiv">See more ...</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-2 ncity" >
+            <span>Dnipro</span>
+        </div>
+        <div class="col-md-1 popul1">
+            <span>1,065,008</span>
+        </div>
+        <div class="col-md-offset-1 col-md-2 link1" ">
+            <a href="https://en.wikipedia.org/wiki/Dnipro">See more ...</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-2 ncity" >
+            <span>Odessa</span>
+        </div>
+        <div class="col-md-1 popul1">
+            <span>1,029,049</span>
+        </div>
+        <div class="col-md-offset-1 col-md-2 link1">
+            <a href="https://en.wikipedia.org/wiki/Odessa">See more ...</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-2 ncity">
+            <span>Donetsk</span>
+        </div>
+        <div class="col-md-1 popul1">
+            <span>1,016,194</span>
+        </div>
+        <div class="col-md-offset-1 col-md-2 link1">
+            <a href="https://en.wikipedia.org/wiki/Donetsk">See more ...</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-2 ncity" >
+            <span>Zaporizhia</span>
+        </div>
+        <div class="col-md-1 popul1">
+            <span>815,256</span>
+        </div>
+        <div class="col-md-offset-1 col-md-2 link1" >
+            <a href="https://en.wikipedia.org/wiki/Zaporizhia">See more ...</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-2 ncity">
+            <span>Lviv</span>
+        </div>
+        <div class="col-md-1 popul1">
+            <span>732,818</span>
+        </div>
+        <div class="col-md-offset-1 col-md-2 link1">
+            <a href="https://en.wikipedia.org/wiki/Lviv">See more ...</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-2 ncity">
+            <span>Kryvyi Rih</span>
+        </div>
+        <div class="col-md-1 popul1">
+            <span>668,980</span>
+        </div>
+        <div class="col-md-offset-1 col-md-2 link1" >
+            <a href="https://en.wikipedia.org/wiki/Kryvyi_Rih">See more ...</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-2 ncity">
+            <span>Mykolaiv</span>
+        </div>
+        <div class="col-md-1 popul1">
+            <span>514,136</span>
+        </div>
+        <div class="col-md-offset-1 col-md-2 link1">
+            <a href="https://en.wikipedia.org/wiki/Mykolaiv">See more ...</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-2 ncity">
+            <span>Mariupol</span>
+        </div>
+        <div class="col-md-1 popul1">
+            <span>492,176</span>
+        </div>
+        <div class="col-md-offset-1 col-md-2 link1">
+            <a href="https://en.wikipedia.org/wiki/Mariupolv">See more ...</a>
+        </div>
+    </div>
+</div>
+
+
+<!--
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1" style="background-color: yellowgreen; color: white;
+        border:1px solid">.col-md-1
+        </div>
+        <div class="col-md-1" style="background-color: yellowgreen; color: white;
+        border:1px solid">.col-md-1
+        </div>
+        <div class="col-md-1" style="background-color: yellowgreen; color: white;
+        border:1px solid">.col-md-1
+        </div>
+        <div class="col-md-1" style="background-color: yellowgreen; color: white;
+        border:1px solid">.col-md-1
+        </div>
+        <div class="col-md-1" style="background-color: yellowgreen; color: white;
+        border:1px solid">.col-md-1
+        </div>
+        <div class="col-md-1" style="background-color: yellowgreen; color: white;
+        border:1px solid">.col-md-1
+        </div>
+        <div class="col-md-1" style="background-color: yellowgreen; color: white;
+        border:1px solid">.col-md-1
+        </div>
+        <div class="col-md-1" style="background-color: yellowgreen; color: white;
+        border:1px solid">.col-md-1
+        </div>
+        <div class="col-md-1" style="background-color: yellowgreen; color: white;
+        border:1px solid">.col-md-1
+        </div>
+        <div class="col-md-1" style="background-color: yellowgreen; color: white;
+        border:1px solid">.col-md-1
+        </div>
+        <div class="col-md-1" style="background-color: yellowgreen; color: white;
+        border:1px solid">.col-md-1
+        </div>
+        <div class="col-md-1" style="background-color: yellowgreen; color: white;
+        border:1px solid">.col-md-1
+        </div>
+    </div>
+</div>
+-->
+
+</body>
+</html>

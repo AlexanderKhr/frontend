@@ -1,0 +1,119 @@
+/* the ability to create a variable */
+/* transfer all variables to this filee */
+/* grouping of selectors */
+body .main {
+  height: 50px;
+}
+body .header {
+  height: 50px;
+}
+body .footer {
+  height: 50px;
+}
+/* & means parental celestial (in this case - html body) */
+html body {
+  /* = html body .main */
+}
+html body .main {
+  height: 20px;
+  /*@backColor:#aabbcc;*/
+  /*change name of variables*/
+  background-color: red;
+}
+.main.mainest {
+  height: 50px;
+}
+/* = .main.maintest */
+.main .div {
+  height: 20px;
+}
+.main.mainest {
+  /* & = .main */
+  background-color: dodgerblue;
+}
+/* make gradient to button */
+.button {
+  width: 120px;
+  height: 70px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffba2f), to(#00001a));
+  background: -moz-linear-gradient(top, #ffba2f, #00001a);
+}
+a {
+  color: #777;
+  text-decoration: none;
+}
+a:hover {
+  /* =a:hover */
+  color: #a31515;
+}
+/* addition of styles */
+.btn {
+  /* 1st button */
+  color: white;
+  background-color: #777777;
+  /* can combined styles */
+  /*  &-add, &-remote {
+      colorr:#fff;
+      }
+   */
+}
+.btn-add {
+  color: white;
+  background-color: darkgrey;
+}
+.btn-remove {
+  color: white;
+  background-color: #a31515;
+}
+/*multiple and combined use*/
+ul,
+li {
+  border-top: 2px dotted #366;
+}
+ul + ul,
+ul + li,
+li + ul,
+li + li {
+  border-top: 0;
+}
+/*  */
+.class-1,
+.class-2,
+.class-3 {
+  background-color: black;
+  border-radius: 15px;
+  border: 2px double black;
+  color: #000;
+}
+.class-2 {
+  background-color: yellow;
+  border-radius: 0;
+}
+.class-3 {
+  background-color: orange;
+  border: 1px solid red;
+}
+.div-1,
+.div-2 {
+  background-color: yellow;
+  color: #000;
+}
+.div-2 {
+  background-color: blue;
+  border: 1px solid black;
+}
+.one {
+  background-color: #336666;
+}
+.one .two,
+.onetwo {
+  width: 50px;
+  color: #a31515;
+  border: 1px dashed black;
+}
+/* impurities with parameters */
+.mixin-extended-button {
+  background: #393939;
+  border: 1px solid purple;
+  color: white;
+}
